@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@800&display=swap" rel="stylesheet">
+
+    <title>TEMA 3</title>
+    <style>
+    /* COLOR DE FONDO ANIMADO*/
+:root {
+  --gradient: linear-gradient(-45deg,white, purple,black,purple,white );
+}
+    
+    
+        body {
+    color:white;
+    font-family: arial;
+    Background-color:black;
+    font-family: 'Baloo 2';
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px white solid;
+  box-shadow:0px 0px 10px 1px white;
+                  0px 0px 10px 5px white;
+  text-shadow: -2px 1px purple;
+  
+  min-height: 30px;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+  
+/*codigo de fondo animado*/
+  }
+  @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+ .uno{
+    color:white;
+    border: 1px white solid;
+    box-shadow:0px 0px 10px 1px white;
+               0px 0px 10px 0px blue;
+    padding:5px;
+    Margin:5px;
+    min-height: 100%;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+      }
+      @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+
+      
+   A,h1,h2{
+       animation: animate 20s infinite linear;
+       text-align:center; 
+       text-shadow: -2px 2px black;
+       text-decoration:none;
+        }
+        @keyframes animate
+{
+    0%,100%{
+        color: lawngreen;
+    }
+    25%{
+        color: deeppink;
+    }
+    50%{
+        color:deepskyblue;
+    }
+    75%{
+        color: black;
+    }
+}
+
+   
+   b{
+       Color:blue;
+   }
+   img{
+       border:1px solid white
+       ;
+   }
+   
+   </style>
+    </head>
+    <body>
+    <div class="menu">
+      <a 
+      href="index.html"><i class="fa fa-code" aria-hidden="true"></i>
+INICIO</a>
+      
+            
+        </div>
+   <div class="uno">
+   <article>
+<h1>
+    Sintaxis CSS
+</h1>
+
+
+<p>
+<b>
+CSS </b>
+está compuesto de reglas de estilo que el navegador interpreta y luego aplica a los elementos correspondientes en tu documento.<br />
+Una regla de estilo consiste en tres partes:<b> selector </b>, <b> propiedad </b>, y <b> valor </b>.<br /><br />
+
+Por ejemplo, el color del encabezado puede ser definido como:
+
+<img width="100%" src="https://i.ibb.co/QXX6Pmr/Screenshot-20220709-103425.jpg" alt="Screenshot-20220709-103425" border="0">
+
+El <b> selector </b> apunta al elemento <b>HTML </b> al cual quieres aplicar el estilo.<br /><br />
+
+<b>
+    NOTA
+</b><br />
+El bloque de declaración contiene una o más declaraciones, separadas por punto y coma.
+Cada declaración incluye un nombre de propiedad y un valor, separados por dos puntos.
+</p>
+ </article>
+ <article>
+     <h1>
+         Selectores de tipo
+     </h1>
+     <p>
+         Los selectores más comunes y fáciles de entender son <b>selectores de tipo.</b><br /> Este selector apunta a los tipos de elementos en la página.<br /><br />
+         Por ejemplo, para afectar a todos los párrafos en la página:
+         
+<img width="100%" src="https://i.ibb.co/DrR19G7/Screenshot-20220709-110527.jpg" alt="Screenshot-20220709-110527" border="0">
+
+<b>
+    NOTA
+</b><br />
+Una declaración CSS siempre termina con un punto y coma, y los grupos de declaraciones están rodeados por llaves.
+     </p>
+ </article>
+ 
+ <article>
+     <h1>
+         Selectores de ID y clase
+     </h1>
+     <p><b>
+     Los selectores de ID </b>
+      te permiten aplicar un estilo a un elemento <b>HTML </b> que tenga un atributo        
+<b>id,</b> independientemente de su posición en el árbol del documento.<br /> Aquí está un ejemplo de un selector de <b> id:</b>
+
+<img width="100%" src="https://i.ibb.co/bz8bL4s/Screenshot-20220709-120849.jpg" alt="Screenshot-20220709-120849" border="0">
+
+<img width="100%" src="https://i.ibb.co/Xsv6p77/Screenshot-20220709-122604.jpg" alt="Screenshot-20220709-122604" border="0">
+
+Para seleccionar un elemento con un <b>id</b> específico, utilice un carácter de numeral <b> (#) </b> seguido con el id del elemento.<br /><br />
+
+<b>
+Los selectores de clase </b>
+trabajan de una manera similar. La principal diferencia es que los <b> IDs </b> sólo pueden aplicar una vez por página, mientras que las clases se pueden utilizar tantas veces en una página según sea necesario. <br />
+
+En el siguiente ejemplo, al tener ambos párrafos la <b> clase "first" </b> se verán afectados por el <b>CSS:</b>
+
+<img width="100%" src="https://i.ibb.co/x8n3Xjy/Screenshot-20220709-133009.jpg" alt="Screenshot-20220709-133009" border="0">
+
+<b>
+    NOTA
+</b><br />
+Para seleccionar elementos con una clase específica, utilice un punto, seguido por el nombre de la clase.
+¡NO  comiences un nombre de clase o id con un número!
+         </p>
+ </article>
+ <article>
+     <h1>Selectores de descendientes
+         
+     </h1>
+     <p>
+     Estos <b> selectores </b> son utilizados para seleccionar los elementos que son descendientes de otro elemento. Al seleccionar los niveles, puedes seleccionar tantos niveles de profundidad como necesites. <br />
+
+Por ejemplo, para afectar sólo elementos
+<b>em</b> en el primer párrafo de la sección "intro":
+
+<img width ="100%" src="https://i.ibb.co/FJsMwFG/Screenshot-20220709-150543.jpg" alt="Screenshot-20220709-150543" border="0">
+
+Como resultado, sólo los elementos seleccionados se verán afectados:
+         <img width="100%" src="https://i.ibb.co/JCRKkxB/Screenshot-20220709-151537.jpg" alt="Screenshot-20220709-151537" border="0">
+         <b>NOTA :</b><br />
+         El selector descendant crea una correspondencia en todos los elementos que sean descendentes de un elemento especificado.
+         
+     </p>
+ </article>
+  </div>
+  </body>
+</html>
