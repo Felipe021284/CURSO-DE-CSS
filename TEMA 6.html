@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@800&display=swap" rel="stylesheet">
+
+    <title>TEMA 6</title>
+    <style>
+    /* COLOR DE FONDO ANIMADO*/
+:root {
+  --gradient: linear-gradient(-45deg,white, purple,black,purple,white );
+}
+    
+    
+        body {
+    color:white;
+    font-family: arial;
+    Background-color:black;
+    font-family: 'Baloo 2';
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px white solid;
+  box-shadow:0px 0px 10px 1px white;
+                  0px 0px 10px 5px white;
+  text-shadow: -2px 1px purple;
+  
+  min-height: 30px;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+  
+/*codigo de fondo animado*/
+  }
+  @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+ .uno{
+    color:white;
+    border: 1px white solid;
+    box-shadow:0px 0px 10px 1px white;
+               0px 0px 10px 0px blue;
+    padding:10px;
+    Margin:5px;
+    min-height: 100%;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+      }
+      @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+
+      
+   A,h1,h2{
+       animation: animate 20s infinite linear;
+       text-align:center; 
+       text-shadow: -2px 2px black;
+       text-decoration:none;
+        }
+        @keyframes animate
+{
+    0%,100%{
+        color: lawngreen;
+    }
+    25%{
+        color: deeppink;
+    }
+    50%{
+        color:deepskyblue;
+    }
+    75%{
+        color: black;
+    }
+}
+
+   
+   b{
+       Color:blue;
+   }
+   img{
+       border:2px solid black
+       ;
+   }
+ /*  EJEMPLO DE ESTILOS DE FUENTES CON CSS*/
+   p.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+p.sansserif {
+    font-family: Helvetica, Arial, sans-serif;
+}
+p.monospace {
+    font-family: "Courier New", Courier, monospace;
+}
+p.cursive {
+    font-family: Florence, cursive;
+}
+p.fantasy {
+    font-family: Blippo, fantasy;
+}
+   
+   </style>
+    </head>
+    <body>
+    <div class="menu">
+      <a 
+      href="index.html"><i class="fa fa-code" aria-hidden="true"></i>
+INICIO</a>
+      
+            
+        </div>
+   <div class="uno">
+   <article>
+<h1>
+    TRABAJANDO CON TEXTO
+</h1>
+
+<h2>
+    La propiedad font-family
+</h2>
+
+<p>
+La propiedad font-family especifica la letra para un elemento. 
+Hay dos tipos de nombres para familias de fuentes: <br />
+- <b> familia de fuente: </b> una familia de fuente específica (como Times New Roman o Arial) <br />
+
+-  <b> familia genérica: </b> un grupo de familias de fuentes con una apariencia similar (como Serif o Monospace)
+<br /><br />
+
+He aquí un ejemplo de diversos estilos de fuentes:
+
+</p>
+<img width="100%" src="https://i.ibb.co/MkhFKQC/IMG-20220719-113123.jpg" alt="IMG-20220719-113123" border="0">
+
+
+<b>EJEMPLO DE ESTILOS DE FUENTES CON CSS</b>
+<p class="serif">
+   EJEMPLO DE serif font.
+</p>
+<p class="sansserif">
+   EJEMPLO DE sans-serif font.
+</p> 
+<p class="monospace">
+   EJEMPLO DE monospace font.
+</p> 
+<p class="cursive">
+   Ejemplo De cursive font.
+</p> 
+<p class="fantasy">
+   EJEMPLO DE fantasy font.
+</p>
+
+<img width="100%" src="https://i.ibb.co/sqbN1Lp/IMG-20220719-144026.jpg" alt="IMG-20220719-144026" border="0">
+
+
+<img width="100%" src="https://i.ibb.co/FHH8GPD/IMG-20220719-150707.jpg" alt="IMG-20220719-150707" border="0">
+
+<p>
+    <b>NOTA</b><br />
+    Separa cada valor con una coma para indicar que son alternativas. <br />
+Si el nombre de una familia de fuente es más de una palabra, debe estar entre comillas: "Times New Roman".
+    
+</p>
+     
+    </article>
+    <article>
+        <h1>
+            La propiedad font-family
+        </h1>
+        <p>
+            La propiedad <b>
+            font-family </b>
+            debería registrar varias familias de fuente como un sistema de <b> "respaldo" </b>.<br /> Cuando especifiques una fuente web en un estilo <b>CSS </b>, añade más de un nombre de familia de fuente, con el fin de evitar comportamientos inesperados. Si por alguna razón la computadora del cliente no tiene la letra que has seleccionado, intentará con la siguiente. <br /><br />
+
+Es una buena práctica especificar una familia de fuente genérica, para permitirle al navegador seleccionar una fuente similar en la familia genérica, si ninguna otra fuente está disponible.
+        </p>
+        
+        <img width="100%" src="https://i.ibb.co/xmLBTvX/IMG-20220719-170849.jpg" alt="IMG-20220719-170849" border="0">
+        
+        
+        Si el navegador no soporta la fuente
+<b>Arial </b>, intentará con las siguientes fuentes ( <b>
+Helvetica Neue </b> , luego <b> Helvetica</b> ). Si el navegador no tiene ninguna de éstas, intentará con la <b> sans-serif </b> genérica.<br /><br />
+        
+        <b>
+            NOTA
+        </b><br />
+        Recuerda utilizar comillas si el nombre de la fuente consiste en más de una palabra.
+    </article>
+  </div>
+  </body>
+</html>
