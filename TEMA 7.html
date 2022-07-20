@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@800&display=swap" rel="stylesheet">
+
+    <title>TEMA 7</title>
+    <style>
+    /* COLOR DE FONDO ANIMADO*/
+:root {
+  --gradient: linear-gradient(-45deg,white, purple,black,purple,white );
+}
+    
+    
+        body {
+    color:white;
+    font-family: arial;
+    Background-color:black;
+    font-family: 'Baloo 2';
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px white solid;
+  box-shadow:0px 0px 10px 1px white;
+                  0px 0px 10px 5px white;
+  text-shadow: -2px 1px purple;
+  
+  min-height: 30px;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+  
+/*codigo de fondo animado*/
+  }
+  @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+ .uno{
+    color:white;
+    border: 1px white solid;
+    box-shadow:0px 0px 10px 1px white;
+               0px 0px 10px 0px blue;
+    padding:10px;
+    Margin:5px;
+    min-height: 100%;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+      }
+      @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+
+      
+   A,h1,h2{
+       animation: animate 20s infinite linear;
+       text-align:center; 
+       text-shadow: -2px 2px black;
+       text-decoration:none;
+        }
+        @keyframes animate
+{
+    0%,100%{
+        color: lawngreen;
+    }
+    25%{
+        color: deeppink;
+    }
+    50%{
+        color:deepskyblue;
+    }
+    75%{
+        color: black;
+    }
+}
+
+   
+   b{
+       Color:blue;
+   }
+   img{
+       border:2px solid black
+       ;
+   }
+   
+   /*EJEMPLO DE FONT SIZE*/
+   p.small {
+    font-size: small;
+}
+p.medium {
+    font-size: medium;
+}
+p.large {
+    font-size: large;
+}
+p.xlarge {
+    font-size: x-large;
+}
+   
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 1.25em
+    ;
+}
+   
+   </style>
+    </head>
+    <body>
+    <div class="menu">
+      <a 
+      href="index.html"><i class="fa fa-code" aria-hidden="true"></i>
+INICIO</a>
+      
+            
+        </div>
+   <div class="uno">
+   <article>
+<h1>
+    FONT SIZE
+</h1>
+<h2>La propiedad font-size
+    
+</h2>
+
+<p>
+La propiedad <b>
+font-size </b>
+establece el tamaño de una letra. Una forma de establecer el tamaño de las fuentes en la web es utilizando 
+palabras clave.<br />
+ Por ejemplo <b><br />
+ xx-small, small, medium, large, larger, </b>
+ Etc.
+
+</p>
+Ejemplos de <b>FONT SIZE</b>
+<p class="small">
+   EJEMPLO DE small
+</p>
+<p class="medium">
+   EJEMPLO DE medium
+</p>
+<p class="large">
+   EJEMPLO DE large
+</p>
+<p class="xlarge">
+   EJEMPLO DE  very large
+</p>
+
+<img width="100%" src="https://i.ibb.co/YTxqtCg/IMG-20220720-111102.jpg" alt="IMG-20220720-111102" border="0">
+
+<img width="100%" src="https://i.ibb.co/0ZndLTk/IMG-20220720-111810.jpg" alt="IMG-20220720-111810" border="0">
+
+<p>
+    <b>
+        NOTA
+    </b><br />
+    Las palabras claves son útiles si no quieres que el usuario pueda aumentar el tamaño de la fuente ya que afectaría adversamente la apariencia del sitio.
+</p>
+
+<h2>
+    La propiedad font-size
+</h2>
+
+<p>También puedes utilizar valores numéricos en <b>
+píxeles o ems </b>
+para manipular el tamaño de la fuente. <br />
+Fijar el tamaño de la fuente en píxeles <b>
+(px) </b>
+es una buena opción cuando necesitas precisión a nivel de píxel, dándote control total sobre el tamaño del texto. <br /><br />
+La unidad de tamaño <b>
+ em </b>
+ es otra forma de fijar el tamaño de fuente (em es una unidad de tamaño relativa).<br /> Permite que la mayoría de los navegadores redimensione el texto. Si no has establecido el tamaño de fuente en ninguna parte de la página, se utilizará entones el tamaño por defecto del navegador, el cual es 16px. <br /><br />
+
+Para calcular el tamaño de un em, puedes usar la siguiente fórmula: em = pixels / 16
+ 
+    
+</p>
+
+<h4>ESTE ES UN EJEMPLO DE UN HEADING CON 20px</h4>
+
+<h5>ESTE ES UN EJEMPLO DE UN HEADING CON 1.25 em</h5>
+     
+    <img width="100%" src="https://i.ibb.co/cxxb4TZ/IMG-20220720-160114.jpg" alt="IMG-20220720-160114" border="0">
+     
+     <p>
+         <b>
+             NOTA
+         </b><br />
+         
+         Prueba con diferentes combinaciones de tamaño de texto y acercamiento de página en una variedad de navegadores para asegurarte que el texto permanezca legible.
+         
+         
+     </p>
+     
+     
+     
+     
+    </article>
+  </div>
+  </body>
+</html>
