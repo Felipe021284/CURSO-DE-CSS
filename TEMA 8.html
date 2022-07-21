@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@800&display=swap" rel="stylesheet">
+
+    <title>TEMA 8</title>
+    <style>
+    /* COLOR DE FONDO ANIMADO*/
+:root {
+  --gradient: linear-gradient(-45deg,white, purple,black,purple,white );
+}
+    
+    
+        body {
+    color:white;
+    font-family: arial;
+    Background-color:black;
+    font-family: 'Baloo 2';
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px white solid;
+  box-shadow:0px 0px 10px 1px white;
+                  0px 0px 10px 5px white;
+  text-shadow: -2px 1px purple;
+  
+  min-height: 30px;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+  
+/*codigo de fondo animado*/
+  }
+  @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+ .uno{
+    color:white;
+    border: 1px white solid;
+    box-shadow:0px 0px 10px 1px white;
+               0px 0px 10px 0px blue;
+    padding:10px;
+    Margin:5px;
+    min-height: 100%;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+      }
+      @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+
+      
+   A,h1,h2{
+       animation: animate 20s infinite linear;
+       text-align:center; 
+       text-shadow: -2px 2px black;
+       text-decoration:none;
+        }
+        @keyframes animate
+{
+    0%,100%{
+        color: lawngreen;
+    }
+    25%{
+        color: deeppink;
+    }
+    50%{
+        color:deepskyblue;
+    }
+    75%{
+        color: black;
+    }
+}
+
+   
+   b{
+       Color:blue;
+   }
+   img{
+       border:2px solid black
+       ;
+   }
+   /* EJEMPLOS DE ESTILOS DE TEXTO*/
+   
+p.normal {
+    font-style: normal;
+}
+p.italic {
+    font-style: italic;
+}
+p.oblique {
+    font-style: oblique;
+}
+   
+   
+   </style>
+    </head>
+    <body>
+    <div class="menu">
+      <a 
+      href="index.html"><i class="fa fa-code" aria-hidden="true"></i>
+INICIO</a>
+      
+            
+        </div>
+   <div class="uno">
+   <article>
+<h1>
+    La propiedad font-style
+</h1>
+
+
+<p>
+La propiedad <b> font-style </b> es usada típicamente para especificar texto en cursiva.
+</p>
+
+<p class="italic">EJEMPLO DE TEXTO CON ESTILO ESTILO ITALIC</p>
+
+<img width="100%" src="https://i.ibb.co/T2Qjgn5/IMG-20220721-134429.jpg" alt="IMG-20220721-134429" border="0">
+     
+     <p>
+         La propiedad <b>
+         font-style </b>
+         tiene tres valores:<br /> <b>
+         normal, italic (cursiva), y oblique (oblicua). </b>
+         <b>
+Oblique (oblicua)</b>
+ es muy similar a <b>
+ italic (cursiva),</b>
+  pero con menos soporte.
+     </p>
+     <p class="normal">EJEMPLO DE TEXTO CON ESTILO normal.</p>
+<p class="italic">EJEMPLO DE TEXTO CON ESTILO italic.</p>
+<p class="oblique"> EJEMPLO DE TEXTO CON ESTILO oblique.</p>
+
+<img width="100%" src="https://i.ibb.co/H7jHQgq/IMG-20220721-144814.jpg" alt="IMG-20220721-144814" border="0">
+
+<p class="italic">
+    <b>NOTA</b><br />
+    La etiqueta HTML producirá exactamente el mismo resultado que el estilo de letra italic (cursiva).
+</p>
+     
+    </article>
+  </div>
+  </body>
+</html>
