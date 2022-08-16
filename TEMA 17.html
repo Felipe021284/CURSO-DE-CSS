@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@800&display=swap" rel="stylesheet">
+
+    <title>TEMA 17</title>
+    <style>
+    /* COLOR DE FONDO ANIMADO*/
+:root {
+  --gradient: linear-gradient(-45deg,white, purple,black,purple,white );
+}
+    
+    
+        body {
+    color:white;
+    font-family: arial;
+    Background-color:black;
+    font-family: 'Baloo 2';
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px white solid;
+  box-shadow:0px 0px 10px 1px white;
+                  0px 0px 10px 5px white;
+  text-shadow: -2px 1px purple;
+  
+  min-height: 30px;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+  
+/*codigo de fondo animado*/
+  }
+  @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+ .uno{
+    color:white;
+    border: 1px white solid;
+    box-shadow:0px 0px 10px 1px white;
+               0px 0px 10px 0px blue;
+    padding:10px;
+    Margin:5px;
+    min-height: 100%;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+      }
+      @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+
+      
+   A,h1,h2{
+       animation: animate 20s infinite linear;
+       text-align:center; 
+       text-shadow: -2px 2px black;
+       text-decoration:none;
+        }
+        @keyframes animate
+{
+    0%,100%{
+        color: lawngreen;
+    }
+    25%{
+        color: deeppink;
+    }
+    50%{
+        color:deepskyblue;
+    }
+    75%{
+        color: black;
+    }
+}
+
+   
+   b{Color:blue;
+        text-transform: uppercase;
+        font-style: italic;
+        
+       
+   }
+   img{
+       border:2px solid black
+       ;
+   }
+   
+   p {
+    text-indent: 30px;
+}
+   
+   
+/*ejemplo de text-transform*/
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+   
+   </style>
+    </head>
+    <body>
+    <div class="menu">
+      <a 
+      href="index.html"><i class="fa fa-code" aria-hidden="true"></i>
+INICIO</a>
+      
+            
+        </div>
+   <div class="uno">
+   <article>
+<h1>
+    La propiedad text-transform
+</h1>
+
+
+<p>
+La propiedad <b>
+text-transform </b>
+de CSS especifica como pasar a mayúsculas el texto de un elemento. <br />
+Por ejemplo, puede ser usada para hacer que el texto aparezca con la inicial de cada palabra en mayúsculas.
+
+
+</p>
+
+<p class="capitalize">
+   ejemplo  del valor capitalize este convierte la primera letra en mayuscula 
+    
+</p>
+
+
+<img width="100%" src="https://i.ibb.co/syXMB13/IMG-20220816-113409.jpg" alt="IMG-20220816-113409" border="0">
+
+<h1>
+    Valores de text-transform
+    
+    
+</h1>
+    
+<p>
+    Utilizando la propiedad <br /><b>
+    text-transform </b>
+ puedes hacer que el texto aparezca todo en mayúsculas o minúsculas.<br />
+     He aquí un ejemplo
+</p>
+
+<p class="uppercase">este valor transforma todas las letras en mayusculas</p>
+<p class="lowercase">este valor transforma todas las letras en minusculas</p>
+
+<img width="100%" src="https://i.ibb.co/ggp4dzZ/IMG-20220816-141351.jpg" alt="IMG-20220816-141351" border="0">
+     
+    </article>
+  </div>
+  </body>
+</html>
