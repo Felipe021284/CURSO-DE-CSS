@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@800&display=swap" rel="stylesheet">
+
+    <title>TEMA 19</title>
+    <style>
+    /* COLOR DE FONDO ANIMADO*/
+:root {
+  --gradient: linear-gradient(-45deg,white, purple,black,purple,white );
+}
+    
+    
+        body {
+    color:white;
+    font-family: arial;
+    Background-color:black;
+    font-family: 'Baloo 2';
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px white solid;
+  box-shadow:0px 0px 10px 1px white;
+                  0px 0px 10px 5px white;
+  text-shadow: -2px 1px purple;
+  
+  min-height: 30px;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+  
+/*codigo de fondo animado*/
+  }
+  @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+ .uno{
+    color:white;
+    border: 1px white solid;
+    box-shadow:0px 0px 10px 1px white;
+               0px 0px 10px 0px blue;
+    padding:10px;
+    Margin:5px;
+    min-height: 100%;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+      }
+      @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+
+      
+   A,h1,h2{
+       animation: animate 20s infinite linear;
+       text-align:center; 
+       text-shadow: -2px 2px black;
+       text-decoration:none;
+        }
+        @keyframes animate
+{
+    0%,100%{
+        color: lawngreen;
+    }
+    25%{
+        color: deeppink;
+    }
+    50%{
+        color:deepskyblue;
+    }
+    75%{
+        color: black;
+    }
+}
+
+   
+   b{Color:blue;
+        text-transform: uppercase;
+        font-style: italic;
+        
+       
+   }
+   img{
+       border:2px solid black
+       ;
+   }
+   
+   p {
+    text-indent: 30px;
+    text-transform: capitalize;
+}
+
+/*ejemplo de word spacing*/
+
+.normal { 
+    word-spacing: normal;
+}
+.px { 
+    word-spacing: 30px;
+}
+
+
+   .positive { 
+    word-spacing: 20px;
+}
+.negative { 
+    word-spacing: -5px;
+}
+   
+   </style>
+    </head>
+    <body>
+    <div class="menu">
+      <a 
+      href="index.html"><i class="fa fa-code" aria-hidden="true"></i>
+INICIO</a>
+      
+            
+        </div>
+   <div class="uno">
+   <article>
+<h1>
+    La propiedad word-spacing
+    
+</h1>
+
+
+<p>
+
+La propiedad <b>
+ word-spacing </b><br />
+ especifica el espacio entre palabras en un texto. <br />
+ Tal cual como la propiedad <br /><b>
+ letter-spacing, </b>
+ puedes establecer los valores de word-spacing como normal, length, and inherit.<br />
+ <b>EJEMPLO</b>
+</p>
+<p class="normal"> este parrafo no tiene word-spacing applicado.</p>
+<p class="px"> este parrafo tiene   word-spaced de 30px.</p>
+
+     <img width="100%" src="https://i.ibb.co/ZMgxNpD/IMG-20220823-171152.jpg" alt="IMG-20220823-171152" border="0">
+     
+     <b>NOTA</b>
+     <P>
+         Cuando un espaciado extraño es usado y es necesario mantener el párrafo seleccionado con separación normal entre palabras, la opción normal es utilizada usualmente.
+         
+     </P>
+     
+     <h1>
+         Unidades de medida
+     </h1>
+     <p>
+         Para definir un espacio extra entre palabras, puedes usar valores de medidas positivas como <b>
+         px, pt, pc, cm, mm, inches  (pulgadas), em, y ex.</b><br />
+Los valores negativos también son permitidos.<br /><br /> Aquí está un ejemplo para mostrar la diferencia.
+     </p>
+     
+     <p class="positive">este es un pa word-spaced at 20px.</p>
+<p class="negative">This paragraph is word-spaced at -5px.</p>
+    </article>
+    
+    <img width="100%" src="https://i.ibb.co/9NtX2Pf/IMG-20220823-184942.jpg" alt="IMG-20220823-184942" border="0">
+  </div>
+  </body>
+</html>
