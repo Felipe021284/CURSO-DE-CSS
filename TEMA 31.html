@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@800&display=swap" rel="stylesheet">
+
+    <title>TEMA 31</title>
+    <style>
+    /* COLOR DE FONDO ANIMADO*/
+:root {
+  --gradient: linear-gradient(-45deg,white, purple,black,purple,white );
+}
+    
+    
+        body {
+    color:white;
+    font-family: arial;
+    Background-color:black;
+    font-family: 'Baloo 2';
+} 
+.menu{
+ display: inline-block;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  Margin:10px;
+  width: 110px;
+  height:30px;
+  Padding:5px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px white solid;
+  box-shadow:0px 0px 10px 1px white;
+                  0px 0px 10px 5px white;
+  text-shadow: -2px 1px purple;
+  
+  min-height: 30px;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+  
+/*codigo de fondo animado*/
+  }
+  @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+ .uno{
+    color:white;
+    border: 1px white solid;
+    box-shadow:0px 0px 10px 1px white;
+               0px 0px 10px 0px blue;
+    padding:10px;
+    Margin:5px;
+    min-height: 100%;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 20s infinite;
+          animation: bg-animation 20s infinite;
+      }
+      @-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+
+      
+   h1,h2{
+       animation: animate 20s infinite linear;
+       text-align:center; 
+       text-shadow: -2px 2px black;
+       text-decoration:none;
+        }
+        @keyframes animate
+{
+    0%,100%{
+        color: lawngreen;
+    }
+    25%{
+        color: deeppink;
+    }
+    50%{
+        color:deepskyblue;
+    }
+    75%{
+        color: black;
+    }
+}
+
+   
+   b{Color:blue;
+        text-transform: uppercase;
+        font-style: italic;
+        
+       
+   }
+   img{
+       border:2px solid black
+       ;
+       width:100%;
+   }
+   
+   p {
+    text-indent: 30px;
+    text-transform: capitalize;
+}
+   
+/* ejemplo de estilo para enlaces*/   
+   a:hover{
+    color: white;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+   
+   </style>
+    </head>
+    <body>
+    <div class="menu">
+      <a 
+      href="index.html"><i class="fa fa-code" aria-hidden="true"></i>
+INICIO</a>
+      
+            
+        </div>
+   <div class="uno">
+   <article>
+<h1>
+
+Estableciendo estilos a los enlaces
+</h1>
+
+
+<p>
+
+Se les puede dar estilo a los enlaces con cualquier propiedad CSS (por ejemplo, color, font-family, background, Etc.).<br />
+Adicionalmente, se les puede dar diferentes estilos a los enlaces, dependiendo de en qué estado se encuentren. Los siguientes pseudo selectores están disponibles:<br />
+<b>
+a:link -</b> <br />
+ define el estilo para enlaces normales no visitados <br />
+<b>
+a:visited -</b><br />
+define el estilo para enlaces visitados <br />
+<b>
+a:active - </b><br />
+un enlace se convierte en activo una vez que se hace clic en él <br />
+<b>
+a:hover - </b><br />
+ocurre cuando el ratón está sobre el enlace <br /><br />
+
+El siguiente ejemplo crea un vínculo que cambiará de estilo cuando el ratón se mueva sobre él.
+</p>
+
+<p><a class="dos"
+href="http://www.sololearn.com" target="_blank">
+Este enlace cambia de color cuando pasamos el mouse sobre él
+</a></p>
+
+
+     <img src="https://i.ibb.co/7nDWrd8/IMG-20221023-221435.jpg" alt="IMG-20221023-221435" border="0">
+     
+     <b>NOTA</b>
+     <p>
+         Al establecer el estilo de varios estado de los enlaces, hay algunas reglas acerca del orden:<br />
+- a:hover DEBE venir después de a:link y a:visited <br />
+- a:active DEBE venir después de a:hover
+     </p>
+     
+     <h1>Decoración de texto de los enlaces
+         
+     </h1>
+     
+     <p>
+         Por defecto, los enlaces de texto son subrayados por el navegador.<br />
+Uno de los usos más comunes de CSS con enlaces es quitar el subrayado. En el siguiente ejemplo, la propiedad <b>
+text-decoration </b>
+es utilizada para quitar el subrayado.
+     </p>
+     
+     <p><a href="http://www.sololearn.com" target="_blank">
+   Este enlace tiene la propiedad text-declration none.
+</a></p>
+
+<img src="https://i.ibb.co/KKPzxM8/IMG-20221023-224306.jpg" alt="IMG-20221023-224306" border="0">
+
+<b>nota</b>
+     <p>
+         Las siguientes propiedades se utilizan para controlar la apariencia de los enlaces:<br />
+border:none - elimina el borde de las imágenes con enlaces <br />
+outline:none - elimina el border punteado de las líneas que se le han hecho clic en IE
+     </p>
+     
+    </article>
+  </div>
+  </body>
+</html>
